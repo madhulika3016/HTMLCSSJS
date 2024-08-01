@@ -1,0 +1,54 @@
+<html>
+<script>
+//Browser Window  Object
+function msg()
+{
+	window.alert("Welcome to the website");
+}
+function msg1()
+{
+	var v=confirm("R u sure?");
+	if(v==true)
+	{
+	alert("ok");
+	}
+	else if(v!=true)
+	{
+		alert("Canceled");
+	}
+	else
+	{
+	alert("Cancel");
+	}
+}
+function msg2()
+{
+	var v=window.prompt("Who are you");
+	alert("I am ok  "+v);
+}
+function msg3()
+{
+	open("http://www.google.com");
+}
+function msg4()
+{
+	setTimeout(function(){alert("Welcome to Mywebsite")},1000);
+}
+//history.back();
+document.writeln("<br/>navigator.appCodeName: "+navigator.appCodeName);  
+document.writeln("<br/>navigator.appName: "+navigator.appName);  
+document.writeln("<br/>navigator.appVersion: "+navigator.appVersion);  
+document.writeln("<br/>navigator.cookieEnabled: "+navigator.cookieEnabled);  
+document.writeln("<br/>navigator.language: "+navigator.language);  
+document.writeln("<br/>navigator.userAgent: "+navigator.userAgent);  
+document.writeln("<br/>navigator.platform: "+navigator.platform);  
+document.writeln("<br/>navigator.onLine: "+navigator.onLine);
+
+</script>
+<input type="button" value="click"  onclick="msg()"/>
+<input type="button" value="Delete Record"  onclick="msg1()">
+<input type="button" value="submit" onclick="msg2()">
+<input type="button" value="open" onclick="msg3()">
+<input type="button" value="open" onclick="msg4()">
+
+</html>

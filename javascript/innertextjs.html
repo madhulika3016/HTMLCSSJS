@@ -1,0 +1,30 @@
+<html>
+<script>
+function validate()
+{
+var msg;
+if(document.myForm.username.value.length>0)
+{
+    console.log(document.myForm.username.value);
+}
+else{
+    window.alert("Username should not be empty");
+}
+if(document.myForm.userPass.value.length>5)
+{
+   msg="good";
+}
+else{
+msg="poor";
+}
+document.getElementById('id1').innerText=msg;
+}
+</script>
+<form name="myForm">
+    <label>Username</label>
+    <input type="text" value="" name="username" onkeyup="validate()"><br>
+    <label>Password</label>
+<input type="password" value="" name="userPass" onkeyup="validate()">
+Strength:<span id="id1">no strength</span>
+</form>
+</html>

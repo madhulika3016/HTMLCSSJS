@@ -1,0 +1,53 @@
+<html>
+<script>
+	function getGrossSal()
+   {
+	var salary=parseFloat(document.getElementById("salary").value);
+	var name=document.getElementById("name").value;
+
+	var cat=document.getElementById("cat").value;
+	var grossSal=0;
+	
+	if(cat=="exo")
+	{
+	grossSal=salary+(salary*20/100);
+	alert("Your gross salary is "+grossSal);
+	document.writeln("Your gross salary is "+grossSal);
+
+	}
+	else if(cat=="o")
+	{
+	grossSal=salary+(salary*10/100);
+	alert("Your gross salary is "+grossSal);
+	document.writeln("Your gross salary is "+grossSal);
+	}
+	else if(cat=="n")
+	{
+	gorssSal=salary;
+	alert("Your gross salary is "+salary);
+	document.writeln("Your gross salary is "+salary);
+	}
+	else if(cat=="p")
+	{
+	grossSal=salary-(salary*10/100);
+	alert("Your gross salary is "+grossSal);
+	document.writeln("Your gross salary is "+grossSal);
+	}
+	else
+	{
+	document.write("Please enter a valid catogry");
+	}	
+}
+</script>
+<form>
+Salary  :<input type="text" id="salary" name="salary"><br/><br/>
+
+Catgory :<input type="text" id="cat" name="cat"><br/><br/>
+
+Name    :<input type="text" id="name" name="name"><br/><br/>
+
+
+<input type="button" value="Submit" onclick="getGrossSal()">
+
+</form>
+</html>

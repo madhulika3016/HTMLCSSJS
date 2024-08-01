@@ -1,0 +1,36 @@
+<html>
+<script>  
+var emp=["Manu","Shiv","Shaurya"];  
+for(i=0;i<emp.length;i++)
+{  
+document.write(emp[i] + "<br/>");  
+}  
+var i;  
+var emp = new Array();  
+emp[0] = "Xyz";  
+emp[1] = "Abc";  
+emp[2] = "Pqr";   
+for(i=0;i<emp.length;i++)
+{  
+document.write(emp[i] + "<br>");  
+}
+var emp=new Array("Jai","Vijay","Smith");  
+for (i=0;i<emp.length;i++){  
+document.write(emp[i] + "<br>");  
+}
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+fruits.reverse();
+for (i=0;i<fruits.length;i++){  
+document.write(fruits[i] + "<br>");  
+}
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+for(i=0;i<numbers2.length;i++){
+    document.writeln(numbers2[i]);
+}
+function myFunction(value, index, numbers1) {
+  return value * 2;
+}
+</script> 
+</html>

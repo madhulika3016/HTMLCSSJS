@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+XYZ
+</title>
+
+</head>
+<body>
+<header>Problem 2</header>
+<form>
+	<label for="numNodes">Number of Circles:</label>
+      <input type="text" id="n" name="NumberofCircle">
+      <label for="radius">Radius:</label>
+      <input type="text" id="r" name="radius">
+    </form>
+
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #d3d3d3;">
+
+</canvas>
+
+
+<button onclick="myFunction()">Click me</button>
+<script>
+function myFunction(){
+var canvas = document.getElementById("myCanvas");
+var NumberofCircle= document.getElementById("n").value;
+var radius=document.getElementById("r").value;
+
+
+for(var i=1;i<=NumberofCircle;i++)
+{
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+
+var x = Math.floor(Math.random()*300);
+var y = Math.floor(Math.random()*300);
+ 
+ctx.arc(x, y, radius, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = '0.1alpha';
+            ctx.fill();
+}
+}
+</script>
+</body>
+</html>

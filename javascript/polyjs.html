@@ -1,0 +1,24 @@
+<html>
+<script>  
+class A  
+  {  display()  
+    {  
+      document.writeln("A is invoked");  
+    } 
+    display(a)  
+    {  
+      document.writeln("Parametrized A is invoked  "+a);  
+    }   }  
+class B extends A  
+  {  
+  display()  
+    {  
+      document.writeln("B is invoked");  
+    }}  
+var b=new B();  
+b.display();  
+var a =new A();
+a.display();
+//a.display(20);  overloading not supported
+</script>
+</html>
